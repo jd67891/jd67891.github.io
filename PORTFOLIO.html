@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="PORTFOLIO.HTML.STYLE.css">
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="IMAGES/catt.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Screenshot</a></li>
+                <li><a href="#">links</a></li>
+                <li><a href="#">About Me</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>STUDENT FROM THE COLLEGE OF COMPUTER SCIENCE!</p>
+            <h1>Hi  I'm <span>JDBOY</span> Saycon<br>From BSIT2B</h1>
+        </div>
+    </div>
+ </div>   
+ <!---------------about--------------------->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img id="image" src="IMAGES/ME.jpg" alt="bisag unsa na text">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is jdboy saycon from BSIT 2B lived in Curadang Street Lanzona sub matina davao city and my hobbies are playing online games and physical outdoor games my background in programming is basically nothing but i willing to learn always and god guide us all</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>NCI</span><br>FOOD AND BEVERAGES</li>
+                        <li><span>NCII</span><br>BAKE AND PASTRY</li>
+                        <li><span>NCIII</span><br>HOUSEKEEPING</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2018</span><br>OJT AT THE FELIS RESORT WITHIN 5WEEKS</li>
+                        <li><span>2019</span><br>OJT AT THE LOCAL HOTEL WITHIN 5WEEKS</li>
+                    </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>2007</span><br>BAYANIHAN ELEMENTARY SCHOOL</li>
+                    <li><span>2010</span><br>EMAR HUMAN AND ENVIROMENTAL COLLEGE</li>
+                    <li><span>2020</span><br>CURRENTLY ENROLLED AT UINIVERSITY OF IMMACULATE CONCEPTION</li>
+                </ul>
+        </div>
+    </div>
+ </div>
+ <!----------PORTFOLIO--------->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="IMAGES/work1.png">
+                <div class="layer">
+                    <h3>Davis Burger</h3>
+                    <p>First html work</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="IMAGES/work2 fashion.png">
+                <div class="layer">
+                    <h3>fashion</h3>
+                    <p>2nd html work</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="work">
+            <img src="IMAGES/work3 wine.png">
+            <div class="layer">
+                <h3>Wine festival</h3>
+                <p>3rd html work</p>
+                <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+ </div>
+ <div class="work">
+    <img src="IMAGES/work4 prelim financial.png">
+    <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+    <div class="layer">
+        <h3>Financial tracker</h3>
+        <p>Prelim exam</p>
+       
+ <script>
+
+ var tablinks = document.getElementsByClassName("tab-links");
+ var tabcontents = document.getElementsByClassName("tab-contents");
+
+ function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+ }
+
+ </script>
+
+
+</body>
+</html>
